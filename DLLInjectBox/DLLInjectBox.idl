@@ -1,0 +1,29 @@
+﻿// DLLInjectBox.idl: DLLInjectBox.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(DLLInjectBox.tlb)。
+
+[ uuid(188e6155-dc0a-47d2-a37d-097e1bbd7dd9), version(1.0) ]
+library DLLInjectBox
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CDLLInjectBoxDoc 的主调度接口
+
+	[ uuid(81bc1f81-dd60-4641-bb26-b09b939108ba) ]
+	dispinterface IDLLInjectBox
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CDLLInjectBoxDoc 的类信息
+
+	[ uuid(622a986a-a686-4d7e-b7c9-3caaa6642975) ]
+	coclass DLLInjectBox
+	{
+		[default] dispinterface IDLLInjectBox;
+	};
+};

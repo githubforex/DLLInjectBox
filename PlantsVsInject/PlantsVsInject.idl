@@ -1,0 +1,29 @@
+﻿// PlantsVsInject.idl: PlantsVsInject.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(PlantsVsInject.tlb)。
+
+[ uuid(9bd014f2-a4a6-4279-a721-43e260384a59), version(1.0) ]
+library PlantsVsInject
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CPlantsVsInjectDoc 的主调度接口
+
+	[ uuid(7f9af097-9be4-40ee-b695-0981b2d6b95e) ]
+	dispinterface IPlantsVsInject
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CPlantsVsInjectDoc 的类信息
+
+	[ uuid(21022ea0-5650-4070-a52e-84fdef947115) ]
+	coclass PlantsVsInject
+	{
+		[default] dispinterface IPlantsVsInject;
+	};
+};
